@@ -36,8 +36,11 @@ This Bash shell script saves statistics every 1 second for 3 minutes (during 180
 OpenSim Wiki article : http://opensimulator.org/wiki/Web_Statistics_Module
 The challenge solved is to get the XHR calls URLs of the AJAX page - This was done through using the Developer tools of Web browsers mainly the Network Inspectors. The 3 XHR call URLS are being fetched regularly on the AJAX page:
 http://0.0.0.0:9000/SStats/simstatsajax.html - have useful Simulator stats
+
 http://0.0.0.0:9000/SStats/activelogajax.html - NOTHING USEFUL HERE. It is retrieved for completion sake
+
 http://0.0.0.0:9000/SStats/activeconnectionsajax.html - has useful stats about packets in the different channels of circuits of each region.
+
 The Shell script fetches XHR URLs using wget command and stores the output as HTML files in seperate folders (3 folders)
 Python scripts will later -in each folder- parse the HTML files and store their content into ONE CSV file for later statistical Analysis.
 This script will generate many files and take some time....
