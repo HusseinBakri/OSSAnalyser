@@ -34,7 +34,9 @@ SStatscript.sh shell script
 --------------------------
 This Bash shell script saves statistics every 1 second for 3 minutes (during 180 seconds) from the OpenSim Web Statistics Module
 OpenSim Wiki article : http://opensimulator.org/wiki/Web_Statistics_Module
-The challenge solved is to get the XHR calls URLs of the AJAX page - This was done through using the Developer tools of Web browsers mainly the Network Inspectors. The 3 XHR call URLS are being fetched regularly on the AJAX page:
+The challenge solved is to get the XHR calls URLs of the AJAX page - This was done through using the Developer tools of Web browsers mainly the Network Inspectors. 
+
+The 3 XHR call URLS are being fetched regularly on the AJAX page:
 http://0.0.0.0:9000/SStats/simstatsajax.html - have useful Simulator stats
 
 http://0.0.0.0:9000/SStats/activelogajax.html - NOTHING USEFUL HERE. It is retrieved for completion sake
